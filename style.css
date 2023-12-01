@@ -1,49 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes multicolorText {
+  0% {
+    color: #c5644e; 
   }
+  25% {
+    color: #daba52; 
+  }
+  50% {
+    color: #39ba51; 
+  }
+  75% {
+    color: #395aba; 
+  }
+  100% {
+    color: rgb(255, 51, 51); 
+  }
+}
+
+h1 {
+  animation: multicolorText 5s infinite; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
   
-  .content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 8px;
-  }
-  
-  input {
-    padding: 8px;
-    margin-bottom: 16px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+select{
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+
+button {
+  background-color: #3ebf43;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.resetBtn {
+  background-color: #dd3c30;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.resetBtn:hover {
+  background-color: #a04545;
+}
+
+
+
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#result th, #result td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#result th {
+  background-color: #f2f2f2;
+}
+
+#result td {
+  font-weight: bold;
+  color: #333; /
+}
+
